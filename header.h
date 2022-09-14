@@ -8,24 +8,17 @@ using namespace std;
 
 
 
-vector<string> loadData(string fileName)
-{
-    vector<string> data;
-    ifstream infile;
-    infile.open(fileName);
-    
-    string temp;
-    while(!infile.eof())
-    {
-        getline(infile, temp);
-        data.push_back(temp);
-    }
-    return data;
-}
-
+vector<string> loadData(string fileName);
+vector<int> visualizer(vector<string> data);
+void displayer(vector<int> data);
 
 bool mergeSort(vector<string> &data);
+bool mergeSort(vector<int> &data);
 bool insertionSort(vector<string> &data);
+bool insertionSort(vector<int> &data);
 bool quickSort(vector<string> &data);
+bool quickSort(vector<int> &data);
 bool bubbleSort(vector<string> &data);
+bool bubbleSort(vector<int> &data);
 bool selectionSort(vector<string> &data);
+bool selectionSort(vector<int> &data);

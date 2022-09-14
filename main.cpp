@@ -5,9 +5,12 @@ int main()
 {
     string fileName = "datafile.txt";
     vector<string> data = loadData(fileName);
-    for(int i = 0; i < data.size(); ++i)
-    {
-        cout << data[i] << endl;
-    }
+    vector<int> visual = visualizer(data);
+    
+    displayer(visual);
+    insertionSort(visual);
+    displayer(visual);
+
+
     return 0;
 }
